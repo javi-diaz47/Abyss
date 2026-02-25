@@ -10,7 +10,6 @@ def load_dataset(filename: str) -> pd.DataFrame:
 
     if path.exists():
         file_ext = get_file_extesion(filename)
-
         match file_ext:
             case "csv":
                 df = pd.read_csv(path)
